@@ -8,21 +8,28 @@
     body {
       margin: 0;
       font-family: sans-serif;
-      background: linear-gradient(135deg, #4CAF50, #2E7D32);
-      color: white;
+      background: #ffffff;
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       height: 100vh;
       text-align: center;
     }
+
     .logo {
-      margin-bottom: 2rem;
+      margin-top: 20vh; /* 20% van boven */
     }
+
+    .logo img {
+      max-width: 80%;
+      height: auto;
+    }
+
     .button {
-      background: white;
-      color: #2E7D32;
+      background: #ff6600;
+      color: white;
       padding: 15px 25px;
       font-size: 1.1rem;
       border: none;
@@ -30,15 +37,39 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     .button:hover {
-      background: #f1f1f1;
+      background: #e55a00;
+    }
+
+    .footer {
+      margin-bottom: 10vh; /* 10% van onder */
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .footer a {
+      color: #ff6600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="logo">
-    <h1>Reserveer jouw plek</h1>
+    <img src="https://i.ibb.co/bb4Gkgq/logo.png" alt="Jon Karelse Intercoiffure">
   </div>
+
   <a href="https://1kapper.nl/salons?q=jon+karelse" class="button" target="_blank">Reserveer nu</a>
+
+  <div class="footer">
+    Utrechtsestraat 2, 3401 CV IJsselstein <br>
+    <a href="tel:+31306881227">030 688 1227</a>
+  </div>
 </body>
 </html>
